@@ -2,6 +2,7 @@ const request = require('request');
 const cheerio = require('cheerio');
 
 // var translator = $('body').translate({lang: "en", t: dict});
+
 request('https://prefeitura.pbh.gov.br/saude/licitacao/pregao-eletronico-151-2020', (error, response, HTML) => 
   {
   if(!error && response.statusCode == 200){
